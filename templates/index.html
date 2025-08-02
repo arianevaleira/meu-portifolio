@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Ariane Valéria</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link href="/static/style.css" rel="stylesheet">
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0pUTdpJmnAIw2cGQpu9SZLmCzKnu5HW4&callback=initMap"></script>
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container flex justify-between items-center">
+      <h1 class="text-2xl md:text-3xl">Ariane Valéria</h1>
+      <nav class="flex flex-wrap gap-4">
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Bem-vindo ao Meu Portfólio!</h2>
+      <p class="text-lg md:text-xl max-w-2xl mx-auto mb-6">
+        Sou Ariane Valéria, estudante de Técnico em Informática para Internet, apaixonada por criar soluções web modernas e intuitivas.
+      </p>
+      <a href="#projetos" class="inline-block bg-white text-accent font-semibold py-2 px-6 rounded-full hover:bg-accent-light transition">
+        Veja Meus Projetos
+      </a>
+    </div>
+  </section>
+
+  <section id="sobre" class="container py-12">
+    <h2 class="text-3xl font-bold mb-6">Sobre Mim</h2>
+    <p class="max-w-3xl mx-auto">
+      Estudante no último ano do curso Técnico em Informática para Internet, possuo experiência em desenvolvimento full-stack, com foco em Python (FastAPI, Flask), React, e banco de dados (MySQL, SQL). Sou apaixonada por design UX/UI, integração de APIs como a do Google Maps, e configuração de servidores em Linux e VirtualBox. Meu objetivo é criar soluções tecnológicas acessíveis e impactantes.
+    </p>
+  </section>
+
+  <section id="habilidades" class="container py-12">
+    <h2 class="text-3xl font-bold mb-6">Habilidades</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="badge">Python</div>
+      <div class="badge">React</div>
+      <div class="badge">FastAPI</div>
+      <div class="badge">Flask</div>
+      <div class="badge">MySQL</div>
+      <div class="badge">HTML/CSS</div>
+      <div class="badge">JavaScript</div>
+      <div class="badge">UX/UI</div>
+    </div>
+  </section>
+
+  <section id="projetos" class="container py-12">
+    <h2 class="text-3xl font-bold mb-6">Projetos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="card">
+        <h3 class="text-xl font-bold">Sistema de Gerenciamento de Biblioteca</h3>
+        <p>API em FastAPI com interface em React e banco de dados MySQL para gerenciar livros e empréstimos.</p>
+        <div class="flex gap-2">
+          <span class="badge">FastAPI</span>
+          <span class="badge">React</span>
+          <span class="badge">MySQL</span>
+        </div>
+        <a href="https://github.com/arianevaleira" class="text-accent hover:underline">Ver no GitHub</a>
+      </div>
+      <div class="card">
+        <h3 class="text-xl font-bold">Localizador de Pontos de Interesse</h3>
+        <p>Aplicação web usando a API do Google Maps para exibir pontos de interesse com marcadores interativos.</p>
+        <div class="flex gap-2">
+          <span class="badge">JavaScript</span>
+          <span class="badge">Google Maps API</span>
+          <span class="badge">HTML/CSS</span>
+        </div>
+        <div id="map"></div>
+        <a href="https://github.com/arianevaleira" class="text-accent hover:underline">Ver no GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="container py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Contato</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="card text-center">
+        <i class="fas fa-envelope text-accent text-2xl mb-2"></i>
+        <h3 class="text-lg font-semibold">E-mail</h3>
+        <a href="mailto:valeriaariane20@gmail.com" class="text-accent hover:underline">valeriaariane20@gmail.com</a>
+      </div>
+      <div class="card text-center">
+        <i class="fab fa-github text-accent text-2xl mb-2"></i>
+        <h3 class="text-lg font-semibold">GitHub</h3>
+        <a href="https://github.com/arianevaleira" target="_blank" class="text-accent hover:underline">/arianevaleira</a>
+      </div>
+      <div class="card text-center">
+        <i class="fab fa-linkedin-in text-accent text-2xl mb-2"></i>
+        <h3 class="text-lg font-semibold">LinkedIn</h3>
+        <a href="https://linkedin.com/in/ariane-valeria" target="_blank" class="text-accent hover:underline">/ariane-valeria</a>
+      </div>
+    </div>
+    <div class="text-center mt-6">
+      <a href="/resume.pdf" download class="inline-block bg-accent text-white font-semibold py-2 px-6 rounded-full hover:bg-purple-700 transition">
+        Baixar Currículo
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-accent-light text-text-primary py-6 text-center">
+    <p>&copy; 2025 Ariane Valéria. Todos os direitos reservados.</p>
+    <div class="mt-2">
+      <a href="#home" class="text-accent mx-2 hover:underline">Home</a>
+      <a href="#projetos" class="text-accent mx-2 hover:underline">Projetos</a>
+      <a href="#contato" class="text-accent mx-2 hover:underline">Contato</a>
+    </div>
+  </footer>
+
+  <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    function initMap() {
+      const mapOptions = {
+        center: { lat: -23.5505, lng: -46.6333 },
+        zoom: 12
+      };
+      const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+      new google.maps.Marker({
+        position: { lat: -23.5505, lng: -46.6333 },
+        map: map,
+        title: "Exemplo de Ponto de Interesse"
+      });
+    }
+
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      const backToTop = document.querySelector('.back-to-top');
+      backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>
