@@ -17,6 +17,13 @@
   --font-stack: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "Work Sans", sans-serif;
 }
 
+
+/* .color1 { #efd8a4 };
+.color2 { #e8ae96 };
+.color3 { #e49d89 };
+.color4 { #e47f83 };
+.color5 { #a8c99e }; */
+
 body {
   background-color: var(--bg);
   font-family: 'Inter', sans-serif;
@@ -33,7 +40,7 @@ h2, h3 {
 }
 
 .cabecalho {
-  background: var(--surface);
+  background: #e49d89;
   border-bottom: 1px solid var(--border);
   padding: 17px;
   position: sticky;
@@ -58,11 +65,16 @@ h2, h3 {
 
 #home {
   max-width: 92%;
-  background: var(--surface);
-  padding: 2.5rem 1rem;
-  border-radius: var(--radius);
+  background: #efd8a4c0;
+  padding: 17px;
+  min-height: 350px;
+  border-radius: 5px;
   box-shadow: var(--shadow);
   margin: 2rem auto;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
 }
 
 #sobre {
