@@ -1,13 +1,20 @@
 :root {
-  --bg: #f9fafb;
+  --bg: #f0f4f9; 
   --surface: #ffffff;
-  --text-primary: #1f2937;
-  --accent: #7c3aed;
-  --titulos:#34008d;
-  --accent-light: #ede9fe;
-  --radius: 16px;
-  --shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  --transition: all 0.3s ease;
+  --text-primary: #2f3942; 
+  --text-secondary: #5f6f85;
+  --heading: #1f2d45; 
+  --accent: #8c9eff; 
+  --accent-muted: #d7e0ff;
+  --support1: #ffe3ed; 
+  --support2: #e6fcf5; 
+  --radius: 12px;
+  --shadow: 0 12px 32px rgba(47, 57, 66, 0.08);
+  --transition: all 0.25s ease;
+  --border: #e3e8f1;
+  --max-width: 1200px;
+
+  --font-stack: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "Work Sans", sans-serif;
 }
 
 body {
@@ -19,20 +26,24 @@ body {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3 {
+h2, h3 {
   font-family: 'Sora', sans-serif;
   font-weight: 700;
   color: var(--titulos);
 }
 
 .cabecalho {
-  background: linear-gradient(90deg, #7c3aed, #a78bfa);
-  color: white;
-  padding: 1.5rem 2rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 17px;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  font-size: 0.95rem;
 }
 
 
@@ -63,8 +74,28 @@ h1, h2, h3 {
   margin: 2rem auto;
 }
 
-.cabecalho nav a {
+
+
+#sobre p {
+  padding: 7px;
+  text-align: justify;
+  margin: 9px;
+}
+
+#footer{
+  background-color: #69bdaf;
   color: white;
+}
+
+#projetos {
+  max-width: 92%;
+  background: var(--surface);
+  padding: 2.5rem 1rem;
+  margin: 2rem auto;
+}
+
+.cabecalho nav a {
+  color: rgb(70, 127, 145);
   font-weight: 500;
   margin: 0 1rem;
   transition: var(--transition);
@@ -82,14 +113,41 @@ h1, h2, h3 {
   color: var(--accent-light);
 }
 
+
 .hero {
-  background: url('https://source.unsplash.com/random/1600x900?tech') no-repeat center/cover;
+  background: linear-gradient(135deg, rgba(122,140,255,0.08) 0%, rgba(230,252,245,0.08) 100%), url('https://source.unsplash.com/random/1600x900?minimal,soft') no-repeat center/cover;
   color: var(--text-primary);
   text-align: center;
-  padding: 5rem 2rem;
-  border-radius: var(--radius);
-  margin: 1rem auto;
-  max-width: 1200px;
+  padding: 75px;
+  border-radius: 5px;
+  margin: var(--space-lg) auto;
+  max-width: var(--max-width);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  overflow: hidden;
+}
+
+
+
+.hero a {
+  display: inline-block;
+  background: var(--surface);
+  color: var(--accent);
+  font-weight: 600;
+  padding: 0.65rem 1.25rem;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(122,140,255,0.2);
+  transition: var(--transition);
+  font-size: 0.95rem;
+}
+
+.hero a:hover {
+  background: var(--accent);
+  color: white;
+  filter: brightness(1.05);
 }
 
 .card {
@@ -101,20 +159,27 @@ h1, h2, h3 {
 }
 
 .card:hover {
-  transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 .badge {
   display: inline-block;
-  background: var(--accent-light);
-  color: var(--accent);
-  padding: 0.3rem 0.8rem;
-  border-radius: 999px;
+  background: #62c2b2;
+  color: white;
+  padding: 9px;
+  border-radius: 75px;
   font-size: 0.75rem;
   font-weight: 600;
   margin: 0.5rem 0;
 }
+
+
+.inline-block:hover{
+  transition: var(--transition);
+  background: #62c2b2;
+  color: white;
+}
+
 
 #map {
   height: 200px;
@@ -127,16 +192,16 @@ h1, h2, h3 {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  background: var(--accent);
+  background: #62c2b2;
   color: white;
-  padding: 0.75rem;
+  padding: 15px;
   border-radius: 50%;
   box-shadow: var(--shadow);
   display: none;
 }
 
 .back-to-top:hover {
-  background: #6d28d9;
+  background: #43867b;
 }
 
 @media (max-width: 768px) {
