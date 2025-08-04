@@ -1,21 +1,22 @@
 :root {
-  --bg: #f0f4f9; 
+  --bg: #fff9fb; 
   --surface: #ffffff;
-  --text-primary: #2f3942; 
-  --text-secondary: #5f6f85;
-  --heading: #1f2d45; 
-  --accent: #8c9eff; 
-  --accent-muted: #d7e0ff;
+  --text-primary: #5a3a4a; 
+  --text-secondary: #8c6b7a;
+  --heading: #3d2a35; 
+  --accent: #e8b4bc; 
+  --accent-muted:#f5d8dd;
   --support1: #ffe3ed; 
   --support2: #e6fcf5; 
   --radius: 12px;
   --shadow: 0 12px 32px rgba(47, 57, 66, 0.08);
   --transition: all 0.25s ease;
-  --border: #e3e8f1;
+  --border: #e8d5da;       
   --max-width: 1200px;
 
   --font-stack: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "Work Sans", sans-serif;
 }
+
 
 
 /* .color1 { #efd8a4 };
@@ -40,8 +41,9 @@ h2, h3 {
 }
 
 .cabecalho {
-  background: #e49d89;
+  background: linear-gradient(15deg, var(--support1) 0%, var(--surface) 100%);
   border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
   padding: 17px;
   position: sticky;
   top: 0;
@@ -65,7 +67,7 @@ h2, h3 {
 
 #home {
   max-width: 92%;
-  background: #efd8a4c0;
+  background: #FFF9FB;
   padding: 17px;
   min-height: 350px;
   border-radius: 5px;
@@ -95,8 +97,8 @@ h2, h3 {
 }
 
 #footer{
-  background-color: #69bdaf;
-  color: white;
+  background: var(--surface);
+  color: var(--text-primary);
 }
 
 #projetos {
@@ -107,7 +109,7 @@ h2, h3 {
 }
 
 .cabecalho nav a {
-  color: rgb(70, 127, 145);
+  color: var(--accent-light);
   font-weight: 500;
   margin: 0 1rem;
   transition: var(--transition);
@@ -122,7 +124,7 @@ h2, h3 {
 }
 
 .cabecalho nav a:hover {
-  color: var(--accent-light);
+  color: var(--accent-muted);
 }
 
 
@@ -176,19 +178,22 @@ h2, h3 {
 
 .badge {
   display: inline-block;
-  background: #62c2b2;
+  background: #7C5066;
   color: white;
   padding: 9px;
   border-radius: 75px;
   font-size: 0.75rem;
   font-weight: 600;
   margin: 0.5rem 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .inline-block:hover{
   transition: var(--transition);
-  background: #62c2b2;
+  background: #D47381;
   color: white;
 }
 
@@ -204,7 +209,7 @@ h2, h3 {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  background: #62c2b2;
+  background: #D47381;
   color: white;
   padding: 15px;
   border-radius: 50%;
@@ -214,6 +219,29 @@ h2, h3 {
 
 .back-to-top:hover {
   background: #43867b;
+}
+
+
+.sobre-content {
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+
+.skill-card.bg-support1.p-5.rounded-lg {
+    border: 1px solid gray;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(232, 180, 188, 0.1);
+}
+
+.other-skills li {
+  background: var(--surface);
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
 }
 
 @media (max-width: 768px) {

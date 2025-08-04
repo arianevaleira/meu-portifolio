@@ -37,10 +37,72 @@
   </section>
 
   <section id="sobre" class="container py-12">
-    <h2 class="text-3xl font-bold mb-6">Sobre Mim</h2>
-    <p class="textosobre">
-      Estudante no último ano do curso Técnico em Informática para Internet, possuo experiência em desenvolvimento full-stack, com foco em Python (FastAPI, Flask), React, e banco de dados (MySQL, SQL). Gosto de design UX/UI, integração de APIs como a do Google Maps, e configuração de servidores em Linux e VirtualBox. Além disso, também tenho conhecimentos basicos de Word, Excel e PowerPoint.
-    </p>
+    <h2 class="text-3xl font-bold mb-8 text-center md:text-left">Sobre Mim</h2>
+    
+    <div class="sobre-content bg-white p-6 rounded-lg shadow-sm">
+      <p class="mb-6 text-lg leading-relaxed">
+        Estudante do último ano do <span class="text-accent font-semibold">Técnico em Informática para Internet</span>, 
+        com experiência em desenvolvimento <span class="text-accent font-semibold">full-stack</span>.
+        Atuação em projetos que envolvem:
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6 mb-8">
+        <div class="skill-card bg-support1 p-5 rounded-lg">
+          <h3 class="text-xl font-bold mb-3 flex items-center">
+            <i class="fas fa-server mr-2 text-accent"></i> Back-end
+          </h3>
+          <p class="mb-3">
+            Desenvolvimento de APIs com <span class="font-semibold">Python</span> utilizando 
+            <span class="font-semibold">FastAPI</span> e <span class="font-semibold">Flask</span>, 
+            incluindo implementação de autenticação e integração com serviços externos.
+          </p>
+        </div>
+
+        <div class="skill-card bg-support1 p-5 rounded-lg">
+          <h3 class="text-xl font-bold mb-3 flex items-center">
+            <i class="fas fa-laptop-code mr-2 text-accent"></i> Front-end
+          </h3>
+          <p class="mb-3">
+            Construção de interfaces responsivas com <span class="font-semibold">React</span>, 
+            com experiência em integração de APIs como a do <span class="font-semibold">Google Maps</span> 
+            e desenvolvimento de componentes reutilizáveis.
+          </p>
+        </div>
+
+        <div class="skill-card bg-support1 p-5 rounded-lg">
+          <h3 class="text-xl font-bold mb-3 flex items-center">
+            <i class="fas fa-database mr-2 text-accent"></i> Banco de Dados
+          </h3>
+          <p class="mb-3">
+            Modelagem e implementação de bancos de dados relacionais com <span class="font-semibold">MySQL</span>, 
+            desde a estruturação até a otimização de consultas SQL.
+          </p>
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold mb-3 flex items-center text-accent">
+          <i class="fas fa-palette mr-2"></i> UX/UI Design
+        </h3>
+        <p class="pl-8 mb-4">
+          Conhecimentos em princípios de <span class="font-semibold">UX/UI Design</span>, 
+          com capacidade para criar interfaces que alinham usabilidade e estética, 
+          utilizando ferramentas como Figma para prototipagem.
+        </p>
+      </div>
+
+      <div class="other-skills bg-support2 p-5 rounded-lg">
+        <h3 class="text-xl font-semibold mb-3">Outras Competências</h3>
+        <ul class="grid grid-cols-2 md:grid-cols-3 gap-2">
+          <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-accent"></i> Configuração de ambientes Linux</li>
+          <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-accent"></i> Virtualização com VirtualBox</li>
+          <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-accent"></i> Pacote Office (Word, Excel, PowerPoint)</li>
+          <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-accent"></i> Controle de versão com Git</li>
+          <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-accent"></i> Configuração de servidores</li>
+          <li class="flex items-center"><i class="fas fa-check-circle mr-2 text-accent"></i> Documentação técnica</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <section id="habilidades" class="container py-12">
@@ -54,6 +116,11 @@
       <div class="badge">HTML/CSS</div>
       <div class="badge">JavaScript</div>
       <div class="badge">UX/UI</div>
+      <div class="badge">Google Maps</div>
+      <div class="badge">Linux</div>
+      <div class="badge">VirtualBox</div>
+      <div class="badge">Git</div>
+      <div class="badge">Word, PowerPoint e Excel</div>
     </div>
   </section>
 
